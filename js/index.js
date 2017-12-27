@@ -16,10 +16,10 @@ var scores = ["10","20","30","40","50"];
 var strikes = 0;
 
 
-$("#theQuestion").html("Question: " + question);
-$("#families").html(sessionStorage.family1 + " vs " + sessionStorage.family2);
+$("#theQuestion").html("Question: " + question+" <br>Round Score: <span id=\"score\">0</span>");
+$("#families").html("Family Feud: " + sessionStorage.family1 + " vs " + sessionStorage.family2);
 
-$("#familyScores").html(sessionStorage.family1 + ": " + sessionStorage.family1Score + "  |  " + sessionStorage.family2 + ": " + sessionStorage.family2Score );
+$("#familyScores").html("Total Points: " + sessionStorage.family1 + ": " + sessionStorage.family1Score + "  |  " + sessionStorage.family2 + ": " + sessionStorage.family2Score );
 
 for (var i = 1; i < numAnswers+1; i++) {
   $("#front"+String(i)).html(i);
