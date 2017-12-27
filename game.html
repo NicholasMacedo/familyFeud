@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Family Feud</title>
+      <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+<div id="GameBoard">
+  <h1>Family Feud!</h1>
+  <h2 id="families"></h2>
+
+  <h3 id="familyScores"></h3>
+
+<h3>Round Score: <span id="score">0</span></h3>
+<div class="multiplier-wrapper">
+  <span class="strike" id="singleStrike"><img src="empty.png" width="100" height="100"></span>
+  <span class="strike" id="doubleStrike"><img src="empty.png" width="100" height="100"></span>
+  <span class="strike" id="trippleStrike"><img src="empty.png" width="100" height="100"></span>
+</div>
+<div class="multiplier-wrapper">
+  <span class="multiplier active" id="single">SINGLE</span>
+  <span class="multiplier" id="double">DOUBLE</span>
+  <span class="multiplier" id="triple">TRIPLE</span>
+</div>
+<h3 id="theQuestion">Question: <span id="score"></span></h3>
+<div class="board">
+  <div id="1" class="card left">
+    <div id="front1" class="front">-</div>
+    <div class="back">
+      <div id="answer1" class="answer">Tony!</div>
+      <div id="score1" class="score">55</div>
+    </div>
+  </div>
+  <div id="6" class="card right">
+    <div id="front6" class="front">-</div>
+    <div class="back">
+      <div id="answer6" class="answer">sports</div>
+      <div id="score6" class="score">55</div>
+    </div>
+  </div>
+  <div id="2" class="card left">
+    <div id="front2" class="front">-</div>
+    <div class="back">
+      <div id="answer2" class="answer">cars</div>
+      <div id="score2" class="score">55</div>
+    </div>
+  </div>
+  <div id="7" class="card right">
+    <div id="front7" class="front">-</div>
+    <div class="back">
+      <div id="answer7" class="answer">chicken</div>
+      <div id="score7" class="score">55</div>
+    </div>
+  </div>
+  <div id="3" class="card left">
+    <div id="front3" class="front">-</div>
+    <div class="back">
+      <div id="answer3" class="answer">meatloaf</div>
+      <div id="score3" class="score">55</div>
+    </div>
+  </div>
+  <div id="8" class="card right">
+    <div id="front8" class="front">-</div>
+    <div class="back">
+      <div id="answer8" class="answer">hondas</div>
+      <div id="score8" class="score">55</div>
+    </div>
+  </div>
+  <div id="4" class="card left">
+    <div id="front4" class="front">-</div>
+    <div class="back">
+      <div id="answer4" class="answer">motorcycles</div>
+      <div id="score4" class="score">55</div>
+    </div>
+  </div>
+  <div id="9" class="card right">
+    <div id="front9" class="front">-</div>
+    <div class="back">
+      <div id="answer9" class="answer">dates</div>
+      <div id="score9" class="score">55</div>
+    </div>
+  </div>
+  <div id="5" class="card left">
+    <div id="front5" class="front">-</div>
+    <div class="back">
+      <div id="answer5" class="answer">movies</div>
+      <div id="score5" class="score">55</div>
+    </div>
+  </div>
+  <div id="10" class="card right">
+    <div id="front10" class="front">-</div>
+    <div classs="back">
+      <div id="answer10" class="answer">dealerships</div>
+      <div id="score10" class="score">55</div>
+    </div>
+  </div>
+</div>
+
+<div class="helpful-buttons">
+<!--   <button id="flip-all">Flip All</button>
+  <button id="unflip-all">Unflip All</button>
+  <br>
+  <button id="wrong-answer">Wrong answer!</button> -->
+  <form id="usrAnswer" method="POST">
+  <input type="" name="submittedAnswer">
+</form>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdn.rawgit.com/nnattawat/flip/v1.0.18/dist/jquery.flip.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+</div>
+</body>
+
+</html>
